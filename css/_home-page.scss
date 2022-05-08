@@ -1,0 +1,203 @@
+section {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    .information {
+        width: 45%;
+    }
+    .illus {
+        width: 45%;
+        img {
+            width: 100%;
+        }
+    }
+}
+.first-sec {
+    @media #{$mobile} {
+        flex-wrap: wrap;
+        .information {
+            width: 100%;
+            text-align: center;
+            order: 2;
+        }
+        .illus {
+            width: 100%;
+            order: 1;
+        }
+        .get-started {
+            form {
+                input {
+                    display: block;
+                    width: 100%;
+                    &.email {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .get-started {
+        form {
+            .email {
+                border: 1px solid $text-color;
+                color: $text-color;
+            }
+            .submit {
+                background-color: $btn-bg;
+                color: $white;
+                &:hover {
+                    background-color: $bright-blue-hover;
+                }
+            }
+        }
+    }
+}
+.second-sec {
+    background-image: url("../images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 70px;
+    padding-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    .section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $info-bg;
+        padding-left: 40px;
+        padding-right: 40px;
+        .information {
+            width: 45%;
+        }
+        .illus {
+            width: 45%;
+            img {
+                width: 100%;
+            }
+        }
+        .info {
+            padding-left: 30px;
+            padding-bottom: 40px;
+            .go-to {
+                a {
+                    color: $green-color;
+                    text-decoration: underline;
+                    word-spacing: 1px;
+                    img {
+                        vertical-align: middle;
+                        margin-left: 5px;
+                    }
+                }
+                &:hover {
+                    opacity: .6;
+                }
+            }
+            .person {
+                background-color: $white;
+                padding: 15px;
+                border-radius: 4px;
+                margin-top: 40px;
+                width: 300px;
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 10px;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                    }
+                    .name {
+                        font-weight: 700;
+                        color: $title-color;
+                        margin-bottom: 0;
+                    }
+                    .job {
+                        margin-bottom: 0;
+                    }
+                }
+    
+            }
+        }
+        .illus {
+            background-color: $info-bg;
+        }
+    }
+    @media #{$mobile} {
+        background-image: url("../images/bg-curve-mobile.svg");
+        background-size: 100%;
+        .section {
+            flex-wrap: wrap;
+            .information {
+                width: 100%;
+                order: 2;
+                margin-top: 30px;
+            }
+            .illus {
+                width: 100%;
+                order: 1;
+            }
+            .info {
+                h2 {
+                    text-align: center;
+                }
+                .go-to {
+                    text-align: center;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                .person {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+.logic-sec {
+    background-color: $text-color;
+    .child {
+        width: 45%;
+        &.guide {
+            p {
+                color: $light-text;
+                font-size: 12px;
+            }
+        }
+        &.login-field {
+            input {
+                display: block;
+                font-size: 12px;
+                &.email {
+                    background-color: $white;
+                    margin-bottom: 10px;
+                    width: 250px;
+                }
+                &.submit {
+                    background-color: $btn-bg;
+                    color: $white;
+                    &:hover {
+                        background-color: $bright-blue-hover;
+                    }
+                }
+            }
+        }
+    }
+    @media #{$mobile} {
+        flex-wrap: wrap;
+        .child {
+            width: 100%;
+            text-align: center;
+            &.login-field {
+                input {
+                    width: 85% !important;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    
+}

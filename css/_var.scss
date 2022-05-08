@@ -1,0 +1,25 @@
+// colors name
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$bright-blue-hover: hsl(224, 93%, 68%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);// not used yet
+$light-gray: hsl(0, 0%, 75%);  // not used yet
+$white-color: hsl(0, 0%, 100%);
+$attri-color: hsl(228, 45%, 44%);
+
+
+
+$title-color: $very-dark-blue;
+$text-color: $desaturated-blue;
+$btn-bg: $bright-blue;
+$green-color: $moderate-cyan;
+$white: $white-color;
+$info-bg: $light-grayish-blue;
+$light-text: $light-gray;
+$global-family: "Open Sans", sans-serif;
+$reacting-family: "Raleway", sans-serif;
+
+//break point
+$mobile: '(max-width: 767px)';

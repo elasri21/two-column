@@ -1,0 +1,42 @@
+header {
+    padding: 30px 40px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                width: 100px;
+                text-align: center;
+                a {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px 8px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+    @media  #{$mobile} {
+        .logo {
+            width: 100px;
+            img {
+                width: 100%;
+            }
+        }
+        nav {
+            ul {
+                li {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}

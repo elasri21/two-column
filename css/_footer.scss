@@ -1,0 +1,108 @@
+footer {
+    padding: 30px 40px;
+    background-color: $title-color;
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+    .links {
+        display: flex;
+        justify-content: space-between;
+        .contact {
+            width: 33%;
+            img {
+                margin-right: 10px;
+            }
+            p {
+                color: $light-text;
+                margin-bottom: 10px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .contact-us {
+            width: 33%;
+            ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    margin-bottom: 10px;
+                    a {
+                        color: $light-text;
+                        text-align: left;
+                        display: block;
+                        width: 100%;
+                        font-size: 12px;
+                        font-weight: 400;
+                        &:hover {
+                            color: $btn-bg;
+                        }
+                    }
+                }
+            }
+        }
+        .social {
+            width: 33%;
+            text-align: center;
+            a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $light-text;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 15px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                i {
+                    line-height: 30px;
+                    display: block;
+                    color: $light-text;
+                    transition: .3s ease-in-out;
+                    &:hover {
+                        color: $btn-bg;
+                    }
+                }
+                &:hover {
+                    border-color: $btn-bg;
+                }
+            }
+        }
+    }
+    @media #{$mobile} {
+        .links {
+            flex-wrap: wrap;
+            .contact {
+                width: 100%;
+            }
+            .contact-us {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 100%;
+                ul {
+                    // flex-wrap: nowrap;
+                    li {
+                        width: 100%;
+                        .term {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+            .social {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: $attri-color;
+    }
+}
